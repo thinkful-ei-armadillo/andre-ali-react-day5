@@ -45,8 +45,8 @@ class App extends Component {
           <h5>Customize your laptop</h5>  
         </header>      
         <main>
-          <Form features={this.props.features} updateFeature={this.updateFeature}/>
-          <Summary features={this.props.features} />
+          <Form features={this.state.features} selected={this.state.selected} updateFeature={(feature, newValue) => this.updateFeature(feature, newValue)}/>
+          <Summary features={this.state.features} selected={this.state.selected} />
         </main>
       </div>
     );

@@ -21,7 +21,7 @@ const total = Object.keys(this.state.selected)
         return (
             <section className="main__summary">
             <h3>NEW GREENLEAF 2018</h3>
-            {summary}
+            {summary} {/*<Total selected={this.selected} features={this.features} /> */}
             <div className="summary__total">
               <div className="summary__total__label">Your Price: </div>
               <div className="summary__total__value">
