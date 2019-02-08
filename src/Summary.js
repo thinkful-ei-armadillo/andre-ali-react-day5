@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Summary extends Component {
-    
+
 const summary = Object.keys(this.state.selected)
           .map(key => <div className="summary__option" key={key}>
             <div className="summary__option__label">{key}  </div>
@@ -14,7 +14,6 @@ const summary = Object.keys(this.state.selected)
     
 const total = Object.keys(this.state.selected)
     .reduce((acc, curr) => acc + this.state.selected[curr].cost, 0);    
-
 
 
 
