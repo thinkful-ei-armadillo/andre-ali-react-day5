@@ -81,6 +81,7 @@ class App extends Component {
           <h5>Customize your laptop</h5>  
         </header>      
         <main>
+          {/* <SelectForm features={this.props.feathers} updateFeature={this.updateFeature} /> */}
           <section className="main__form">
             <h3>TECH SPECS AND CUSTOMIZATIONS</h3>
             { features }
